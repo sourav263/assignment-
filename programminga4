@@ -1,0 +1,58 @@
+num = int(input("enter the value of n"))
+sum = 0
+for i in range(1,num+1):
+    sum = sum+i
+
+print(sum)
+
+
+#question2
+a = int(input("enter ist num"))
+b = int(input("enter 2nd num"))
+a1 =[]
+b1 = []
+m1 = 1
+m2 = 1
+for i in range(1,a+1):
+     if (a%i==0):
+        a1.append(i)
+for j in range(1,b+1):
+    if (b % j == 0):
+        b1.append(j)
+print(a1)
+print(b1)
+l1 = a1 +b1
+l2 = set(l1)
+l3 = list(l2)
+print(l3)
+m1 = 1
+for i in range(0, len(l3)):
+    m1 = m1*l3[i]
+print(m1)
+
+
+
+#question3
+a = int(input("enter ist num"))
+b = int(input("enter 2nd num"))
+a1 =[]
+b1 = []
+m1 = 1
+m2 = 1
+for i in range(1,a+1):
+     if (a%i==0):
+        a1.append(i)
+for j in range(1,b+1):
+    if (b % j == 0):
+        b1.append(j)
+print(a1)
+print(b1)
+l1 = set(a1)
+l2 = set(b1)
+
+l3 = l1.intersection(l2)
+l4 = list(l3)
+
+l4.sort()
+n = len(l4)
+print(l4[n-1])
